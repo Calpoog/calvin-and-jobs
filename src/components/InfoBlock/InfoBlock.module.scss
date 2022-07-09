@@ -1,0 +1,21 @@
+.title {
+  font-weight: bold;
+  border-bottom: 2px solid var(--info-title-underline-color);
+  color: var(--info-title-color);
+}
+
+.infoBlock {
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--info-icon-color);
+  }
+
+  h4 {
+    color: var(--info-subtitle-color);
+  }
+}
+
+.body {
+  color: var(--info-p-color);
+}

@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+$diamond-size: 1.3rem;
+$top: calc(($h1-font-size * $headings-line-height - $diamond-size) / 2);
+
+.timelinePane {
+  padding-top: 4.5rem;
+
+  h1 {
+    color: var(--h1-color);
+    line-height: 1;
+  }
+
+  h2 {
+    color: var(--role-color);
+  }
+}
+
+.intro {
+  position: relative;
+  color: var(--timeline-p-color);
+
+  &:after {
+    content: '';
+    width: $diamond-size;
+    height: $diamond-size;
+    transform: rotate(45deg);
+    border: 2px solid var(--timeline-color);
+    background-color: var(--timeline-bg-color);
+    position: absolute;
+    top: $top;
+    left: -$diamond-size / 2;
+  }
+
+  &:not(:last-child):before {
+    content: '';
+    width: 2px;
+    background-color: var(--timeline-color);
+    position: absolute;
+    left: -1px;
+    top: $top;
+    bottom: -$top;
+  }
+}

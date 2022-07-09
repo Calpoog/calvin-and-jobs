@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+$top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
+
+.job {
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--timeline-color);
+    background-color: var(--timeline-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    top: $top;
+    left: -0.5rem;
+  }
+
+  &:not(:last-child):before {
+    content: '';
+    width: 2px;
+    background-color: var(--timeline-color);
+    position: absolute;
+    left: -1px;
+    top: $top;
+    bottom: -$top;
+  }
+}
+
+.title {
+  font-size: $h3-font-size;
+  color: var(--job-title-color);
+}
+
+.company {
+  color: var(--company-color);
+}
+
+.tenure {
+  color: var(--tenure-color);
+  font-size: 0.7rem;
+}
+
+.description {
+  color: var(--timeline-p-color);
+}
