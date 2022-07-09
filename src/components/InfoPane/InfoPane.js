@@ -40,7 +40,7 @@ function InfoPane() {
             <br />
             calpoog@gmail.com
             <br />
-            ***REMOVED***
+            (•••) •••-••••
           </p>
         </address>
       </InfoBlock>
