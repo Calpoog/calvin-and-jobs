@@ -1,5 +1,4 @@
-import classNames from 'classnames';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.scss';
 import InfoPane from './components/InfoPane/InfoPane';
 import TimelinePane from './components/TimelinePane/TimelinePane';
