@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 $diamond-size: 1.3rem;
-$top: calc(($h1-font-size * $headings-line-height - $diamond-size) / 2);
+$top: calc(($h1-font-size - $diamond-size) / 2);
 
 .timelinePane {
   padding-top: 4.5rem;
