@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className='container-xxl'>
+    <div className='container-xxl overflow-hidden'>
       {/* <button onClick={() => onThemeChange('blueSteel')}>Change</button> */}
       <div className='row gx-0'>
         <div className='col-12 col-lg-auto order-last order-lg-first'>
