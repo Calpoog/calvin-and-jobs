@@ -1,11 +1,20 @@
-import classNames from 'classnames';
 import Job from '../Job/Job';
 import styles from './TimelinePane.module.scss';
+import SVG from 'react-inlinesvg';
+import illustration from '../../assets/illustration.svg';
 
 function TimelinePane() {
   return (
-    <main className={classNames(styles.timelinePane, 'h-100', 'pb-5')}>
-      <section className={classNames(styles.intro, 'ps-7', 'pb-4')}>
+    <main
+      className={`${styles.timelinePane} h-100 pt-5 pb-sm-5 ps-2 px-sm-3 ps-lg-0`}
+    >
+      <SVG
+        width={undefined}
+        height={undefined}
+        className={`${styles.illustration} ms-sm-7 pb-5 me-lg-6`}
+        src={illustration}
+      />
+      <section className={`${styles.intro} ps-4 ps-sm-7 pb-4`}>
         <header>
           <h1 className='fw-bold mb-3'>Calvin Goodman</h1>
           <h2 className='d-flex flex-wrap align-items-center mb-5'>

@@ -4,15 +4,49 @@ $diamond-size: 1.3rem;
 $top: calc(($h1-font-size - $diamond-size) / 2);
 
 .timelinePane {
-  padding-top: 4.5rem;
+  position: relative;
+  z-index: 2;
 
   h1 {
     color: var(--h1-color);
     line-height: 1;
+    min-height: 2.4rem;
+    display: flex;
+    align-items: center;
   }
 
   h2 {
     color: var(--role-color);
+  }
+
+  :global {
+    .outline {
+      fill: var(--illustration-outline-color);
+    }
+
+    .fill {
+      fill: var(--illustration-bg-color);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 4.5rem !important;
+  }
+}
+
+.illustration {
+  @extend .me-lg-6;
+  max-height: 280px;
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+    height: 280px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 4rem;
+    right: 100%;
   }
 }
 
@@ -29,7 +63,7 @@ $top: calc(($h1-font-size - $diamond-size) / 2);
     background-color: var(--timeline-bg-color);
     position: absolute;
     top: $top;
-    left: -$diamond-size / 2;
+    left: calc($diamond-size / -2);
   }
 
   &:not(:last-child):before {

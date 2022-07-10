@@ -52,10 +52,10 @@ function App() {
     <div className='container-xxl'>
       {/* <button onClick={() => onThemeChange('blueSteel')}>Change</button> */}
       <div className='row gx-0'>
-        <div className='col-auto'>
+        <div className='col-12 col-lg-auto order-last order-lg-first'>
           <InfoPane />
         </div>
-        <div className='col'>
+        <div className='col-12 col-lg order-first order-lg-last'>
           <TimelinePane />
         </div>
       </div>

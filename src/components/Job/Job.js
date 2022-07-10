@@ -1,23 +1,16 @@
-import classNames from 'classnames';
 import styles from './Job.module.scss';
 
 function Job({ title, company, start, end, children }) {
   return (
-    <section className={classNames(styles.job, 'ps-7', 'pb-6')}>
+    <section className={`${styles.job} ps-4 ps-sm-7 pb-6`}>
       <h2
-        className={classNames(
-          styles.title,
-          'd-flex',
-          'mb-2',
-          'flex-wrap',
-          'align-items-center'
-        )}
+        className={`${styles.title} d-lg-flex mb-2 flex-wrap align-items-center`}
       >
-        <span className={classNames(styles.title, 'fw-bold')}>{title}</span>
-        <span className='divider mx-3'></span>
-        <span className={styles.company}>{company}</span>
+        <div className={`${styles.title} fw-bold me-3`}>{title}</div>
+        <div className='divider me-3 d-none d-lg-inline-block'></div>
+        <div className={styles.company}>{company}</div>
       </h2>
-      <div className={classNames(styles.tenure, 'pb-3')}>
+      <div className={`${styles.tenure} pb-3 mt-3`}>
         {start} &mdash; {end}
       </div>
       <div className={styles.description}>{children}</div>
