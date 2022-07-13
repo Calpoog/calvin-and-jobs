@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className='body'>
+    <div className={styles.body}>
       {/* <button onClick={() => onThemeChange('blueSteel')}>Change</button> */}
       <div className='row gx-0'>
         <div className='col-12 col-lg-auto order-last order-lg-first'>

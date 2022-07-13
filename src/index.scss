@@ -63,3 +63,21 @@ p {
     fill: var(--info-title-color) !important;
   }
 }
+
+@mixin slide-in {
+  animation-name: slide-in;
+  animation-fill-mode: both;
+  animation-duration: 350ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

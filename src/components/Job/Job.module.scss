@@ -15,6 +15,9 @@ $top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
     position: absolute;
     top: $top;
     left: -0.5rem;
+    animation-name: dot-in;
+    animation-fill-mode: both;
+    animation-duration: 300ms;
   }
 
   &:not(:last-child):before {
@@ -24,8 +27,57 @@ $top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
     position: absolute;
     left: -1px;
     top: $top;
+    animation-name: line-in;
+    animation-fill-mode: both;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
+
+  @for $i from 0 through 3 {
+    $start: $i * 500ms + 800ms;
+
+    &:nth-child(#{$i + 1}) {
+      .header {
+        animation-delay: $start + 100ms;
+      }
+      .tenure {
+        animation-delay: $start + 150ms;
+      }
+      .description {
+        animation-delay: $start + 200ms;
+      }
+
+      &:after {
+        animation-delay: $start;
+      }
+
+      &:before {
+        animation-delay: $start;
+      }
+    }
+  }
+}
+
+@keyframes dot-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes line-in {
+  from {
+    bottom: 100%;
+  }
+  to {
     bottom: -$top;
   }
+}
+
+.header {
+  @include slide-in;
 }
 
 .title {
@@ -34,14 +86,17 @@ $top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
 }
 
 .company {
+  font-size: $h3-font-size;
   color: var(--company-color);
 }
 
 .tenure {
   color: var(--tenure-color);
   font-size: 0.7rem;
+  @include slide-in;
 }
 
 .description {
   color: var(--timeline-p-color);
+  @include slide-in;
 }

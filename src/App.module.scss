@@ -3,9 +3,13 @@
 @import '~bootstrap/scss/mixins/_breakpoints';
 
 .body {
+  margin: 0 auto;
+
   @include media-breakpoint-up(xl) {
     max-width: 1140px;
-    margin: 0 auto;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 1320px;
   }
 }
 
