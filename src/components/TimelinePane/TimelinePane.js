@@ -2,6 +2,7 @@ import Job from '../Job/Job';
 import styles from './TimelinePane.module.scss';
 import SVG from 'react-inlinesvg';
 import illustration from '../../assets/illustration.svg';
+import { SocialIcon } from 'react-social-icons';
 
 function TimelinePane() {
   return (
@@ -97,6 +98,19 @@ function TimelinePane() {
         start='Feb 2012'
         end='March 2013'
       ></Job>
+
+      <div className='d-flex'>
+        <a
+          className={`${styles.seeCode} mx-auto`}
+          href='https://github.com/Calpoog/calvin-and-jobs'
+        >
+          See the code on
+          <SocialIcon
+            className={`${styles.social} ms-1`}
+            url='https://github.com/Calpoog/calvin-and-jobs'
+          />
+        </a>
+      </div>
     </main>
   );
 }

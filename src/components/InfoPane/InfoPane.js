@@ -7,6 +7,7 @@ import referencesIcon from '../../assets/icons/Thumbs Up.svg';
 import skillsIcon from '../../assets/icons/Lightbulb.svg';
 import spillTop from '../../assets/spill-top.svg';
 import spillBottom from '../../assets/spill-bottom.svg';
+import { SocialIcon } from 'react-social-icons';
 
 function InfoPane() {
   return (
@@ -28,8 +29,8 @@ function InfoPane() {
       <div className='row gx-6 gy-4'>
         <div className='col-12 col-sm-6 col-lg-12'>
           <InfoBlock icon={contactIcon} title='Contact'>
-            <address>
-              <p>
+            <address className='mb-1'>
+              <p className='mb-0'>
                 Columbus, OH
                 <br />
                 calpoog@gmail.com
@@ -37,6 +38,11 @@ function InfoPane() {
                 (•••) ••• - ••••
               </p>
             </address>
+            <SocialIcon
+              className='me-2'
+              url='https://www.linkedin.com/in/calvin-goodman-25752067/'
+            />
+            <SocialIcon url='https://github.com/Calpoog' />
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>

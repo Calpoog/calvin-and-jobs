@@ -54,3 +54,12 @@ p {
   background-color: var(--divider-color);
   display: inline-block;
 }
+
+.social-icon {
+  width: 30px !important;
+  height: 30px !important;
+
+  .social-svg-mask {
+    fill: var(--info-title-color) !important;
+  }
+}

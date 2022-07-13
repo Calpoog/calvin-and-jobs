@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 function InfoBlock({ icon, title, children }) {
   return (
-    <section className={classNames(styles.infoBlock, 'd-flex')}>
+    <section className={classNames(styles.infoBlock, 'd-flex', 'mb-3')}>
       <SVG className={classNames(styles.icon, 'flex-shrink-0')} src={icon} />
       <div className='flex-fill ps-2'>
         <h3 className={classNames(styles.title, 'fw-bold', 'pb-2', 'mb-3')}>
