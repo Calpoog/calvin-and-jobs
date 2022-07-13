@@ -12,20 +12,22 @@ import { SocialIcon } from 'react-social-icons';
 function InfoPane() {
   return (
     <section
-      className={`${styles.infoPane} pt-6 ps-lg-4 pe-lg-6 pb-5 h-100 px-3 mx-n3 mx-lg-0`}
+      className={`${styles.infoPane} h-100 pb-5 ps-3 pe-4 pt-6 ps-lg-4 pe-lg-6`}
     >
-      <SVG
-        width={undefined}
-        height={undefined}
-        className={styles.spillTop}
-        src={spillTop}
-      />
-      <SVG
-        width={undefined}
-        height={undefined}
-        className={styles.spillBottom}
-        src={spillBottom}
-      />
+      <div className={styles.spills}>
+        <SVG
+          width={undefined}
+          height={undefined}
+          className={styles.spillTop}
+          src={spillTop}
+        />
+        <SVG
+          width={undefined}
+          height={undefined}
+          className={styles.spillBottom}
+          src={spillBottom}
+        />
+      </div>
       <div className='row gx-6 gy-4'>
         <div className='col-12 col-sm-6 col-lg-12'>
           <InfoBlock icon={contactIcon} title='Contact'>

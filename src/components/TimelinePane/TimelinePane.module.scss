@@ -76,17 +76,3 @@ $top: calc(($h1-font-size - $diamond-size) / 2);
     bottom: -$top;
   }
 }
-
-.seeCode {
-  color: var(--info-title-color) !important;
-  text-decoration: none;
-  background-color: var(--info-pane-color);
-  border-radius: 4px;
-  padding: 8px 16px;
-
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: underline;
-  }
-}

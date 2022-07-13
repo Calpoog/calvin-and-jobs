@@ -25,10 +25,21 @@
   }
 }
 
+.spills {
+  @include media-breakpoint-down(lg) {
+    overflow: hidden;
+    height: 5.4rem;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    left: 0;
+  }
+}
+
 .spillTop {
   position: absolute;
   left: -1rem;
-  top: -5rem;
+  top: 0;
   fill: var(--info-pane-color);
   height: 5rem;
   transform: rotate(-90deg);
@@ -43,7 +54,7 @@
 .spillBottom {
   position: absolute;
   right: 0;
-  top: -5rem;
+  bottom: -0.2rem;
   transform: rotate(270deg);
   fill: var(--info-pane-color);
   height: 5.4rem;

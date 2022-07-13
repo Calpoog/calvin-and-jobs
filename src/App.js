@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import './App.scss';
 import InfoPane from './components/InfoPane/InfoPane';
 import TimelinePane from './components/TimelinePane/TimelinePane';
+import { SocialIcon } from 'react-social-icons';
+import styles from './App.module.scss';
 
 const themes = {
   wireframe: {
@@ -49,14 +50,23 @@ function App() {
   }
 
   return (
-    <div className='container-xxl overflow-hidden'>
+    <div className='body'>
       {/* <button onClick={() => onThemeChange('blueSteel')}>Change</button> */}
       <div className='row gx-0'>
         <div className='col-12 col-lg-auto order-last order-lg-first'>
           <InfoPane />
         </div>
-        <div className='col-12 col-lg order-first order-lg-last'>
+        <div className='col-12 col-lg order-first order-lg-last pb-5'>
           <TimelinePane />
+          <div className='d-flex'>
+            <div className={`${styles.seeCode} mx-auto`}>
+              See the code on
+              <SocialIcon
+                className={`${styles.social} ms-1`}
+                url='https://github.com/Calpoog/calvin-and-jobs'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
