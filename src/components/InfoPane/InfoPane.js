@@ -1,12 +1,12 @@
-import SVG from 'react-inlinesvg';
+import React from 'react';
 import styles from './InfoPane.module.scss';
-import contactIcon from '../../assets/icons/Location.svg';
-import educationIcon from '../../assets/icons/Book.svg';
 import InfoBlock from '../InfoBlock/InfoBlock';
-import referencesIcon from '../../assets/icons/Thumbs Up.svg';
-import skillsIcon from '../../assets/icons/Lightbulb.svg';
-import spillTop from '../../assets/spill-top.svg';
-import spillBottom from '../../assets/spill-bottom.svg';
+import { ReactComponent as ContactIcon } from '../../assets/icons/Location.svg';
+import { ReactComponent as EducationIcon } from '../../assets/icons/Book.svg';
+import { ReactComponent as ReferencesIcon } from '../../assets/icons/Thumbs Up.svg';
+import { ReactComponent as SkillsIcon } from '../../assets/icons/Lightbulb.svg';
+import { ReactComponent as SpillTop } from '../../assets/spill-top.svg';
+import { ReactComponent as SpillBottom } from '../../assets/spill-bottom.svg';
 import { SocialIcon } from 'react-social-icons';
 
 function InfoPane() {
@@ -15,22 +15,12 @@ function InfoPane() {
       className={`${styles.infoPane} h-100 pb-5 ps-3 pe-4 pt-6 ps-lg-4 pe-lg-6`}
     >
       <div className={styles.spills}>
-        <SVG
-          width={undefined}
-          height={undefined}
-          className={styles.spillTop}
-          src={spillTop}
-        />
-        <SVG
-          width={undefined}
-          height={undefined}
-          className={styles.spillBottom}
-          src={spillBottom}
-        />
+        <SpillTop className={styles.spillTop} />
+        <SpillBottom className={styles.spillBottom} />
       </div>
-      <div className='row gx-6 gy-4'>
+      <div className={`${styles.blocks} row gx-6 gy-4`}>
         <div className='col-12 col-sm-6 col-lg-12'>
-          <InfoBlock icon={contactIcon} title='Contact'>
+          <InfoBlock icon={ContactIcon} title='Contact'>
             <address className='mb-1'>
               <p className='mb-0'>
                 Columbus, OH
@@ -48,7 +38,7 @@ function InfoPane() {
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>
-          <InfoBlock icon={educationIcon} title='Education'>
+          <InfoBlock icon={EducationIcon} title='Education'>
             <h4 className='fw-bold'>The Ohio State University</h4>
             <p>
               BS Computer Science and Engineering
@@ -58,7 +48,7 @@ function InfoPane() {
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>
-          <InfoBlock icon={skillsIcon} title='Skills'>
+          <InfoBlock icon={SkillsIcon} title='Skills'>
             <h4 className='fw-bold'>Design</h4>
             <p className='mb-4'>
               Figma, Sketch, Adobe XD, Illustrator, Photoshop, Wireframes,
@@ -72,7 +62,7 @@ function InfoPane() {
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>
-          <InfoBlock icon={referencesIcon} title='References'>
+          <InfoBlock icon={ReferencesIcon} title='References'>
             <h4 className='fw-bold'>John Hoyt</h4>
             <p className='mb-4'>
               <i>Design Principal, Innovation</i>
