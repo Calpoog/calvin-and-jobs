@@ -4,6 +4,7 @@
   border-radius: 50%;
   border-width: 4px;
   border-style: solid;
+  border-color: currentColor;
   cursor: pointer;
   transform: scale(1);
   transition: 150ms ease;
@@ -23,6 +24,19 @@
       opacity: 1;
       transform: translate3d(-50%, 0, 0);
     }
+  }
+
+  &.active:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    border-color: currentColor;
+    width: 9px;
+    height: 14px;
+    transform: translate(-4px, -8px) rotate(45deg);
   }
 }
 
