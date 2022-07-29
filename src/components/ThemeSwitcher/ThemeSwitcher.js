@@ -4,9 +4,13 @@ import themes from '../../themes';
 import styles from './ThemeSwitcher.module.scss';
 
 function ThemeSwitcher({ className }) {
-  useEffect(() => onThemeChange('Peach Berry'), []);
+  useEffect(
+    () => onThemeChange(localStorage.getItem('theme') || 'Peach Berry'),
+    []
+  );
 
   function onThemeChange(t) {
+    localStorage.setItem('theme', t);
     for (let color in themes[t]) {
       document.documentElement.style.setProperty(
         `--${color}-color`,
