@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.42be5bcb.css",
+    "main.js": "/static/js/main.2f900ae2.js",
+    "static/js/787.89f249e0.chunk.js": "/static/js/787.89f249e0.chunk.js",
+    "static/media/illustration.svg": "/static/media/illustration.cbe82ff42f71d7b8fc9e4e273400dedd.svg",
+    "static/media/Lightbulb.svg": "/static/media/Lightbulb.938e6162b9cb1371caa4086f641a5a7d.svg",
+    "static/media/Thumbs Up.svg": "/static/media/Thumbs Up.06ab8d00b74ecbbb0e31211bb4b9f026.svg",
+    "index.html": "/index.html",
+    "static/media/spill-bottom.svg": "/static/media/spill-bottom.2b706b5c7f1c9348845939a577ebfb2a.svg",
+    "static/media/spill-top.svg": "/static/media/spill-top.a384892fe6e2b4ce2d49953dc2927e7b.svg",
+    "static/media/Book.svg": "/static/media/Book.85b010150ec47b684a29913911a83c66.svg",
+    "static/media/Location.svg": "/static/media/Location.84179cfcbb21ad16dcd4a9861a1fc8d3.svg",
+    "main.42be5bcb.css.map": "/static/css/main.42be5bcb.css.map",
+    "main.2f900ae2.js.map": "/static/js/main.2f900ae2.js.map",
+    "787.89f249e0.chunk.js.map": "/static/js/787.89f249e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42be5bcb.css",
+    "static/js/main.2f900ae2.js"
+  ]
+}
