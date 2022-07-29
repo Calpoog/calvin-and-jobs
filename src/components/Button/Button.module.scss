@@ -1,0 +1,18 @@
+.button {
+  position: relative;
+  display: inline-block;
+  color: var(--button-fg-color);
+  background-color: var(--button-bg-color);
+  border-radius: 4px;
+  padding: 8px 16px;
+  position: relative;
+  z-index: 20;
+  text-decoration: none;
+  transition: 150ms ease;
+
+  &:hover,
+  &:focus {
+    color: var(--button-fg-color);
+    background-color: var(--button-hover-color);
+  }
+}

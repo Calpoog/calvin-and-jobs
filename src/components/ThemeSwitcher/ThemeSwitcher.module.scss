@@ -1,0 +1,43 @@
+.theme {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 150ms ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0px 3px rgb(255 255 255);
+  }
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  opacity: 0;
+  transform: translate3d(-50%, 10px, 0);
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+}

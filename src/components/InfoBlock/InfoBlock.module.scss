@@ -5,11 +5,10 @@
 }
 
 .infoBlock {
-  svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    fill: var(--info-icon-color);
-  }
+  animation-name: slide-in;
+  animation-fill-mode: both;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
 
   h4 {
     color: var(--info-subtitle-color);
@@ -18,8 +17,53 @@
   p:last-child {
     margin-bottom: 0;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: var(--info-subtitle-color);
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: var(--info-icon-color);
 }
 
 .body {
   color: var(--info-p-color);
+}
+
+:global(.blocks) > div {
+  @for $i from 0 through 3 {
+    $start: $i * 200ms;
+
+    &:nth-child(#{$i + 1}) {
+      .infoBlock {
+        animation-delay: $start;
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

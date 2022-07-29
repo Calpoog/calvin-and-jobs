@@ -7,34 +7,39 @@ import { ReactComponent as ReferencesIcon } from '../../assets/icons/Thumbs Up.s
 import { ReactComponent as SkillsIcon } from '../../assets/icons/Lightbulb.svg';
 import { ReactComponent as SpillTop } from '../../assets/spill-top.svg';
 import { ReactComponent as SpillBottom } from '../../assets/spill-bottom.svg';
-import { SocialIcon } from 'react-social-icons';
+import { SiGithub, SiNounproject, SiLinkedin } from 'react-icons/si';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 function InfoPane() {
   return (
     <section
-      className={`${styles.infoPane} h-100 pb-5 ps-3 pe-4 pt-6 ps-lg-4 pe-lg-6`}
+      className={`${styles.infoPane} h-100 pb-5 ps-3 pe-4 pt-6 ps-lg-4 pe-lg-6 d-flex flex-column`}
     >
       <div className={styles.spills}>
         <SpillTop className={styles.spillTop} />
         <SpillBottom className={styles.spillBottom} />
       </div>
-      <div className={`${styles.blocks} row gx-6 gy-4`}>
+      <div className='blocks row gx-6 gy-4'>
         <div className='col-12 col-sm-6 col-lg-12'>
           <InfoBlock icon={ContactIcon} title='Contact'>
-            <address className='mb-1'>
+            <address className='mb-2'>
               <p className='mb-0'>
                 Columbus, OH
                 <br />
-                calpoog@gmail.com
+                <a href='mailto: calpoog@gmail.com'>calpoog@gmail.com</a>
                 <br />
                 (•••) ••• - ••••
               </p>
             </address>
-            <SocialIcon
-              className='me-2'
-              url='https://www.linkedin.com/in/calvin-goodman-25752067/'
-            />
-            <SocialIcon url='https://github.com/Calpoog' />
+            <a href='https://www.linkedin.com/in/calvin-goodman-25752067/'>
+              <SiLinkedin className='me-2' />
+            </a>
+            <a href='https://github.com/Calpoog'>
+              <SiGithub className='me-2' />
+            </a>
+            <a href='https://thenounproject.com'>
+              <SiNounproject />
+            </a>
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>
@@ -78,6 +83,8 @@ function InfoPane() {
           </InfoBlock>
         </div>
       </div>
+
+      <ThemeSwitcher className='mt-4 mt-lg-auto' />
     </section>
   );
 }
