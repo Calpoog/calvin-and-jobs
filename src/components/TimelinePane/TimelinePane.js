@@ -53,13 +53,13 @@ function TimelinePane() {
           </p>
           <p>
             In addition to the innovation organization, I support design
-            implementation of the Mobile Flagship application, with 5 years of
-            subject matter expertise support. Currently I facilitate both the UX
-            design process creating a new mobile design system as well as coach
-            a rotating team of mobile engineers. With these two capacities, I
-            aid in communication between these groups and spearhead the creation
-            of a design system documentation application containing resources
-            for all discliplines.
+            implementation of the Mobile Flagship application, with over 5 years
+            delivering subject matter expertise. Currently I facilitate both the
+            UX design process creating a new mobile design system as well as
+            coach a rotating team of mobile engineers. With these two
+            capacities, I aid in communication between these groups and
+            spearhead the creation of a design system documentation application
+            containing resources for all discliplines.
           </p>
           <p>
             I am an important voice in the recent organizational switch of
