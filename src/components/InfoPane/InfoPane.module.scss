@@ -67,3 +67,35 @@
     transform: none;
   }
 }
+
+.iconLink {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: var(--info-p-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 150ms ease;
+
+  svg {
+    fill: var(--info-pane-color);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0px 3px rgb(255 255 255);
+  }
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}

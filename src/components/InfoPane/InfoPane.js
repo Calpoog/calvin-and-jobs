@@ -9,6 +9,7 @@ import { ReactComponent as SpillTop } from '../../assets/spill-top.svg';
 import { ReactComponent as SpillBottom } from '../../assets/spill-bottom.svg';
 import { SiGithub, SiNounproject, SiLinkedin } from 'react-icons/si';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import classNames from 'classnames';
 
 function InfoPane() {
   return (
@@ -31,13 +32,19 @@ function InfoPane() {
                 (•••) ••• - ••••
               </p>
             </address>
-            <a href='https://www.linkedin.com/in/calvin-goodman-25752067/'>
-              <SiLinkedin className='me-2' />
+            <a
+              className={classNames(styles.iconLink, 'me-2')}
+              href='https://www.linkedin.com/in/calvin-goodman-25752067/'
+            >
+              <SiLinkedin />
             </a>
-            <a href='https://github.com/Calpoog'>
-              <SiGithub className='me-2' />
+            <a
+              className={classNames(styles.iconLink, 'me-2')}
+              href='https://github.com/Calpoog'
+            >
+              <SiGithub />
             </a>
-            <a href='https://thenounproject.com'>
+            <a className={styles.iconLink} href='https://thenounproject.com'>
               <SiNounproject />
             </a>
           </InfoBlock>
