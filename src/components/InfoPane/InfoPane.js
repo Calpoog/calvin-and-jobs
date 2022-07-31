@@ -44,7 +44,10 @@ function InfoPane() {
             >
               <SiGithub />
             </a>
-            <a className={styles.iconLink} href='https://thenounproject.com'>
+            <a
+              className={styles.iconLink}
+              href='https://thenounproject.com/calpoog/'
+            >
               <SiNounproject />
             </a>
           </InfoBlock>
