@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Button.module.scss';
 
 function Button({ icon: Icon, text, url }) {

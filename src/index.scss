@@ -1,45 +1,17 @@
-$enable-negative-margins: true;
+@import 'variables';
+@import 'mixins';
 
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 2.5,
-  7: $spacer * 3,
-);
-
-$font-family-sans-serif: 'Poppins', sans-serif;
-
-$h1-font-size: 2.4rem;
-$h2-font-size: 1.2rem;
-$h3-font-size: 1.1rem;
-$h4-font-size: 0.75rem;
-$h5-font-size: 1rem;
-$h6-font-size: 1rem;
-
-$font-size-base: 0.75rem;
-$line-height-base: 1.5;
-$line-height-large: 2.1;
-
-$paragraph-margin-bottom: 1rem;
-$headings-margin-bottom: 1rem;
-$headings-line-height: 1.5;
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
-// All rem based off 10px size to match Figma design, and then scaled up for web here to 22px.
 html {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 body {
+  font-weight: 300;
   background-color: var(--timeline-bg-color);
 }
 
@@ -61,23 +33,5 @@ p {
 
   .social-svg-mask {
     fill: var(--info-title-color) !important;
-  }
-}
-
-@mixin slide-in {
-  animation-name: slide-in;
-  animation-fill-mode: both;
-  animation-duration: 350ms;
-  animation-timing-function: ease-out;
-}
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }

@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Job.module.scss';
 
 function Job({ title, company, start, end, children }) {
@@ -17,5 +19,13 @@ function Job({ title, company, start, end, children }) {
     </section>
   );
 }
+
+Job.propTypes = {
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  start: PropTypes.string.isRequired,
+  end: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};
 
 export default Job;

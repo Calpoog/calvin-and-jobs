@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './InfoBlock.module.scss';
 
 function InfoBlock({ icon: Icon, title, children }) {

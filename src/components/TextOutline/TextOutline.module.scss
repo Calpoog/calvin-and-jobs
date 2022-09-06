@@ -1,0 +1,15 @@
+.textOutline {
+  position: relative;
+
+  .outline {
+    -webkit-text-stroke-color: white;
+  }
+
+  .fill {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: 0 black;
+  }
+}

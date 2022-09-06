@@ -1,0 +1,33 @@
+$enable-negative-margins: true;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 4,
+  9: $spacer * 6,
+  10: $spacer * 9
+);
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+$h1-font-size: 2.4rem;
+$h2-font-size: 1.2rem;
+$h3-font-size: 1.1rem;
+$h4-font-size: 0.75rem;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+
+$font-size-base: 0.75rem;
+$line-height-base: 1.5;
+$line-height-large: 2.1;
+
+$paragraph-margin-bottom: 1rem;
+$headings-margin-bottom: 1rem;
+$headings-line-height: 1.5;

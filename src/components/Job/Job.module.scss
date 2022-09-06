@@ -1,4 +1,8 @@
-@import '../../index.scss';
+@import '../../variables';
+@import '../../mixins';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
 
 $top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
 
