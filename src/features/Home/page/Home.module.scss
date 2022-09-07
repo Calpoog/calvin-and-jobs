@@ -2,7 +2,6 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins/_breakpoints';
-@import '~bootstrap/scss/vendor/_rfs';
 
 $min-font-size: 0.8;
 $max-font-size: 1;
@@ -17,26 +16,6 @@ $intercept: $min-font-size - $min-width * $slope;
   section {
     position: relative;
     overflow: hidden;
-  }
-
-  h1 {
-    position: relative;
-    font-size: 3.75em;
-    line-height: 1;
-    font-weight: bold;
-    
-    @include media-breakpoint-up(md) {
-      -webkit-text-stroke: 20px white;
-
-      &:after {
-        content: 'Calvin Goodman';
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        -webkit-text-stroke: 0;
-      }
-    }
   }
 
   h2 {
@@ -58,123 +37,6 @@ $intercept: $min-font-size - $min-width * $slope;
   p {
     font-size: 1em;
     line-height: 1.8;
-  }
-}
-
-/* HEADER */
-
-.hero {
-  overflow: hidden;
-  width: 100%;
-  max-width: 1500px;
-  position: relative;
-  margin: 0 auto;
-
-  @include media-breakpoint-up(md) {
-    height: 890px;
-    overflow: visible;
-  }
-}
-
-.heroContent {
-  position: relative;
-  margin-top: 400px;
-  padding: 50px 20px;
-  background-color: #7CDE6B;
-  z-index: 2;
-
-  @media screen and (min-width: 480px) {
-    margin-top: 600px;
-    padding: 50px;
-  }
-  
-  @include media-breakpoint-up(md) {
-    margin-top: 0;
-    padding: unset;
-    padding-top: 270px;
-    background-color: transparent;
-  }
-
-  .slogan {
-    font-size: 1.4em;
-    font-weight: 400;
-  }
-}
-
-
-.intro {
-  max-width: none;
-  
-  @include media-breakpoint-up(md) {
-    max-width: 55%;
-  }
-}
-
-.bigTree {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 50%;
-  height: 400px;
-  margin-left: -500px;
-
-  @media screen and (min-width: 480px) {
-    height: 600px;
-    margin-left: -780px;
-  }
-
-  @include media-breakpoint-up(md) {
-    height: 890px;
-    margin-left: -932px;
-  }
-
-  svg {
-    height: 100%;
-  }
-
-  &:after {
-    content: '';
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: #e2ffdc;
-  }
-}
-
-:global {
-  .leaf {
-    :local {
-      animation-name: wind;
-    }
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    fill: #7CDE6B;
-
-    @for $i from 1 through 34 {
-      $start: ($i - 1) * 200ms;
-  
-      &.leaf-#{$i} {
-        animation-delay: $start;
-      }
-    }
-  }
-
-  .ground {
-    fill: #7CDE6B;
-  }
-
-  .left-leaves:local {
-    fill: #7CDE6B;
-    animation: subtle-wind 5s 3s ease infinite alternate;
-  }
-
-  .right-leaves:local {
-    fill: #7CDE6B;
-    animation: subtle-wind 5s ease infinite alternate;
   }
 }
 
@@ -474,25 +336,5 @@ $intercept: $min-font-size - $min-width * $slope;
 :global {
   .readingWidth {
     max-width: 800px;
-  }
-}
-
-/* ANIMATIONS */
-
-@keyframes wind {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-15px, 8px, 0);
-  }
-}
-
-@keyframes subtle-wind {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-10px, 6px, 0);
   }
 }

@@ -1,31 +1,31 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import { ReactComponent as BigTree } from '../../assets/big-tree.svg';
-import { ReactComponent as Desert } from '../../assets/desert.svg';
-import { ReactComponent as AboutMe } from '../../assets/about-me.svg';
-import { ReactComponent as MyWork } from '../../assets/my-work.svg';
-import { ReactComponent as Quote1 } from '../../assets/quote1.svg';
-import { ReactComponent as Quote2 } from '../../assets/quote2.svg';
-import { ReactComponent as Quote3 } from '../../assets/quote3.svg';
-import { ReactComponent as DescribeMe } from '../../assets/describe-me.svg';
-import { ReactComponent as DescribeMeCalvin } from '../../assets/describe-me-calvin.svg';
-import { ReactComponent as LeftArrow } from '../../assets/left-arrow.svg';
-import { ReactComponent as RightArrow } from '../../assets/right-arrow.svg';
+import { ReactComponent as Desert } from '../../../assets/desert.svg';
+import { ReactComponent as AboutMe } from '../../../assets/about-me.svg';
+import { ReactComponent as MyWork } from '../../../assets/my-work.svg';
+import { ReactComponent as Quote1 } from '../../../assets/quote1.svg';
+import { ReactComponent as Quote2 } from '../../../assets/quote2.svg';
+import { ReactComponent as Quote3 } from '../../../assets/quote3.svg';
+import { ReactComponent as DescribeMe } from '../../../assets/describe-me.svg';
+import { ReactComponent as DescribeMeCalvin } from '../../../assets/describe-me-calvin.svg';
+import { ReactComponent as LeftArrow } from '../../../assets/left-arrow.svg';
+import { ReactComponent as RightArrow } from '../../../assets/right-arrow.svg';
 import classNames from 'classnames';
-import homespring from '../../assets/homespring.png';
-import lasso from '../../assets/lasso.png';
-import sudoku from '../../assets/sudoku.png';
-import house from '../../assets/house.png';
-import widget from '../../assets/widget.png';
-import plants from '../../assets/plants.png';
-import closet from '../../assets/closet.png';
-import beans from '../../assets/beans.png';
-import kirby from '../../assets/kirby.png';
+import homespring from '../../../assets/homespring.png';
+import lasso from '../../../assets/lasso.png';
+import sudoku from '../../../assets/sudoku.png';
+import house from '../../../assets/house.png';
+import widget from '../../../assets/widget.png';
+import plants from '../../../assets/plants.png';
+import closet from '../../../assets/closet.png';
+import beans from '../../../assets/beans.png';
+import kirby from '../../../assets/kirby.png';
 
-import WorkExample from '../../components/WorkExample/WorkExample';
+import WorkExample from '../components/WorkExample/WorkExample';
 import Slider from 'react-slick';
-import '../../assets/slick.css';
+import '../../../assets/slick.css';
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero/Hero';
 
 function Home() {
   const sliderConfig = {
@@ -43,24 +43,7 @@ function Home() {
     <>
       <div className={styles.home}>
         <section className={classNames(styles.divider)}>
-          <div className={classNames(styles.hero, 'px-md-6 px-lg-8')}>
-            <div className={styles.heroContent}>
-              <h1 className='fw-bold'>Calvin Goodman</h1>
-              <h2 className={classNames(styles.slogan, 'mb-5')}>
-                UX Design & Tech Leader
-              </h2>
-              <p className={styles.intro}>
-                I work with smart people making smart new products, flexing
-                between design and technology leadership. I am an evangelist for
-                best practices in both design and development, as well as an
-                advocate for the design process to developers and the
-                development process to designers.
-              </p>
-            </div>
-            <div className={styles.bigTree}>
-              <BigTree />
-            </div>
-          </div>
+          <Hero />
         </section>
 
         <section className={classNames(styles.about, styles.divider)}>
@@ -206,6 +189,13 @@ function Home() {
             <div className={styles.quotes}>
               <Slider className='mb-4' {...sliderConfig}>
                 <blockquote>
+                  <Quote2 />
+                  <p>
+                    Both sides of the house will be happy with his expertise and
+                    leadership in all aspects of user-facing software delivery.
+                  </p>
+                </blockquote>
+                <blockquote>
                   <Quote1 />
                   <p>
                     The best part about working with Calvin is his ability to
@@ -216,17 +206,13 @@ function Home() {
                   </p>
                 </blockquote>
                 <blockquote>
-                  <Quote2 />
-                  <p>
-                    Both sides of the house will be happy with his expertise and
-                    leadership in all aspects of user-facing software delivery.
-                  </p>
-                </blockquote>
-                <blockquote>
                   <Quote3 />
                   <p>
-                    Both sides of the house will be happy with his expertise and
-                    leadership in all aspects of user-facing software delivery.
+                    A full stack developer who's actually the whole package.
+                    Calvin is a leader in the design and tech space who brings
+                    to the table bold designs, clean code, and the rare
+                    leadership ability to teach, guide, and inspire designers
+                    and engineers alike to deliver unrivaled experiences.
                   </p>
                 </blockquote>
               </Slider>
@@ -249,14 +235,14 @@ function Home() {
             <h2 className='mb-5'>Things I care about</h2>
             <p className='readingWidth mb-7 '>
               I bought a 1930 tudor-esque home in Columbus, Ohio. I wanted a
-              home that had character and charm where expert tradesman gave
-              effort crafting something specifically for a new homeowner. Many
-              years and owners passed and various things changed or
-              deteriorated. I’ve spent countless hours learning the history and
-              skills needed to do repairs, crafting improvements, being a
-              perfectionist, and making it mine–while retaining its
-              authenticity. Maybe you see where this is going. These are the
-              values and the blueprints for how I approach all of my work.
+              home that had character and charm where expert tradesman crafted
+              something specifically for a new homeowner. Many years and owners
+              passed and various things changed or deteriorated. I’ve spent
+              countless hours learning the history and skills needed to do
+              repairs, crafting improvements, being a perfectionist, and making
+              it mine–while retaining its authenticity. Maybe you see where this
+              is going. These are the values and the blueprints for how I
+              approach all of my work.
             </p>
             <div className={styles.things}>
               <div className={styles.thing}>

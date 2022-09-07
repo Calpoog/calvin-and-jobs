@@ -1,8 +1,8 @@
-import InfoPane from '../../components/InfoPane/InfoPane';
-import TimelinePane from '../../components/TimelinePane/TimelinePane';
+import InfoPane from '../components/InfoPane/InfoPane';
+import TimelinePane from '../components/TimelinePane/TimelinePane';
 import styles from './Resume.module.scss';
 import { SiFigma, SiGithub } from 'react-icons/si';
-import Button from '../../components/Button/Button';
+import Button from '../components/Button/Button';
 import { Helmet } from 'react-helmet';
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';

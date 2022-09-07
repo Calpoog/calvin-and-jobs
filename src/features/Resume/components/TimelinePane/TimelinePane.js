@@ -1,6 +1,6 @@
 import Job from '../Job/Job';
 import styles from './TimelinePane.module.scss';
-import { ReactComponent as Illustration } from '../../assets/illustration.svg';
+import { ReactComponent as Illustration } from '../../../../assets/illustration.svg';
 import React from 'react';
 
 function TimelinePane() {

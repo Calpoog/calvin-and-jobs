@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './InfoPane.module.scss';
 import InfoBlock from '../InfoBlock/InfoBlock';
-import { ReactComponent as ContactIcon } from '../../assets/icons/Location.svg';
-import { ReactComponent as EducationIcon } from '../../assets/icons/Book.svg';
-import { ReactComponent as ReferencesIcon } from '../../assets/icons/Thumbs Up.svg';
-import { ReactComponent as SkillsIcon } from '../../assets/icons/Lightbulb.svg';
-import { ReactComponent as SpillTop } from '../../assets/spill-top.svg';
-import { ReactComponent as SpillBottom } from '../../assets/spill-bottom.svg';
+import { ReactComponent as ContactIcon } from '../../../../assets/icons/Location.svg';
+import { ReactComponent as EducationIcon } from '../../../../assets/icons/Book.svg';
+import { ReactComponent as ReferencesIcon } from '../../../../assets/icons/Thumbs Up.svg';
+import { ReactComponent as SkillsIcon } from '../../../../assets/icons/Lightbulb.svg';
+import { ReactComponent as SpillTop } from '../../../../assets/spill-top.svg';
+import { ReactComponent as SpillBottom } from '../../../../assets/spill-bottom.svg';
 import { SiGithub, SiNounproject, SiLinkedin } from 'react-icons/si';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import classNames from 'classnames';

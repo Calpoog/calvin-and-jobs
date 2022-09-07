@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import themes from '../../themes';
+import themes from '../../../../themes';
 import styles from './ThemeSwitcher.module.scss';
 
 function ThemeSwitcher({ className }) {
