@@ -40,58 +40,6 @@ $intercept: $min-font-size - $min-width * $slope;
   }
 }
 
-/* INNOVATOR */
-
-.desert {
-  background-color: #A782A4;
-  height: 100vh;
-  min-height: 877px;
-  max-height: 1200px;
-  text-align: center;
-  overflow: hidden;
-
-  h2 {
-    position: relative;
-    z-index: 3;
-  }
-
-  &:before, &:after {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 46.514%;
-    background-color: #8F4E59;
-  }
-  &:before {
-    right: 50%;
-    margin-right: 260px;
-  }
-  &:after {
-    left: 50%;
-    margin-left: 490px;
-  }
-
-  svg {
-    position: absolute;
-    height: 75%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
-
-  @media screen and (max-width: 575px) {
-    max-height: 600px;
-
-    svg {
-      height: 65%;
-      transform: translateX(-55%);
-    }
-  }
-}
-
 /* MY WORK */
 
 .workHeader {
@@ -138,8 +86,8 @@ $intercept: $min-font-size - $min-width * $slope;
 /* DESCRIBE ME */
 
 .describe {
-  background-color: #CEE2FF;
-  text-align: center;
+  $bg: #E2EBF4;
+  background-color: $bg;
 
   .quotes {
     position: relative;
@@ -160,14 +108,14 @@ $intercept: $min-font-size - $min-width * $slope;
 
     &:before {
       left: 0;
-      background: rgb(206,226,255);
-      background: linear-gradient(90deg, rgba(206,226,255,1) 0%, rgba(42,46,62,0) 100%);
+      background: $bg;
+      background: linear-gradient(90deg, $bg 0%, transparent 100%);
     }
 
     &:after {
       right: 0;
-      background: rgb(206,226,255);
-      background: linear-gradient(90deg, rgba(42,46,62,0) 0%, rgba(206,226,255,1) 100%);
+      background: $bg;
+      background: linear-gradient(90deg, transparent 0%, $bg 100%);
     }
   }
 
@@ -247,12 +195,15 @@ $intercept: $min-font-size - $min-width * $slope;
 
   .people {
     width: 687px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &Bottom {
     position: relative;
     height: 150px;
-    background-color: #6383B2;
+    background-color: #C7D2DD;
   }
 
   .calvin {

@@ -1,0 +1,62 @@
+.desert {
+  --outline: #534c3d;
+  // --desert-1: #9B7B4C;
+  // --desert-2: #9A7F47;
+  // --desert-3: #846740;
+  // --desert-4: #876F4B;
+  // --desert-5: #876F4B;
+  --desert-1: #988d7c;
+  --desert-2: #cabea5;
+  --desert-3: #897962;
+  --desert-4: #b7a58a;
+  --desert-5: #baa991;
+
+  background-color: #92a8b5;
+  height: 100vh;
+  min-height: 877px;
+  max-height: 1200px;
+  text-align: center;
+  overflow: hidden;
+
+  h2 {
+    color: rgba(255,255,255,0.85);
+    position: relative;
+    z-index: 3;
+  }
+
+  &:before, &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 46.514%;
+    background-color: #8F4E59;
+  }
+  &:before {
+    right: 50%;
+    margin-right: 260px;
+  }
+  &:after {
+    left: 50%;
+    margin-left: 490px;
+  }
+
+  svg {
+    position: absolute;
+    height: 75%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 575px) {
+    max-height: 600px;
+
+    svg {
+      height: 65%;
+      transform: translateX(-55%);
+    }
+  }
+}

@@ -3,13 +3,34 @@
 @import '~bootstrap/scss/mixins/_breakpoints';
 
 :root {
-  --foliage: #7CDE6B;
-  --bg-foliage: #e2ffdc;
-  --outline: #000000;
+  // --foliage: #7CDE6B;
+  // --bg-foliage: #e2ffdc;
+  // --outline: #000000;
+  // --fg-outline: #000000;
+  // --widget: #c4ae78;
+  // --bark: #9c8b45;
+  // --bark-shadow: #4f3b26;
+  // --shirt: #ff001f;
+  // --asdf: #545454;
+
+  --foliage: #a6ecac;
+  --leaves: #bffcc2;
+  --foliage-alt: #82dc8a;
+  --ground: #a2d988;
+  --bg-foliage: #e7ffe7;
+  // --foliage: #ffb878;
+  // --leaves: #ffc786;
+  // --foliage-alt: #ffc678;
+  // --ground: #ffe278;
+  // --bg-foliage: #fffbe7;
+  --fg-outline: #000000;
+  --outline: #694f3e;
   --widget: #c4ae78;
-  --bark: #9c8b45;
-  --bark-shadow: #4f3b26;
-  --shirt: #ff001f;
+  --bark: #b6a76a;
+  --bark-shadow: #9b7c4c;
+  --shirt: #ec1c2b;
+  --skin: #f4e4d5;
+  --hair: #735353;
 }
 
 .hero {
@@ -27,23 +48,23 @@
   h1 {
     opacity: 0;
     position: relative;
-    font-size: 3.75em;
+    font-size: 3.25em;
     line-height: 1;
     font-weight: bold;
     animation: in 1200ms ease 300ms forwards;
     
-    @include media-breakpoint-up(md) {
-      -webkit-text-stroke: 20px white;
+    // @include media-breakpoint-up(md) {
+    //   -webkit-text-stroke: 20px white;
 
-      &:after {
-        content: 'Calvin Goodman';
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        -webkit-text-stroke: 0;
-      }
-    }
+    //   &:after {
+    //     content: 'Calvin Goodman';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 2;
+    //     -webkit-text-stroke: 0;
+    //   }
+    // }
   }
 }
 
@@ -51,7 +72,7 @@
   position: relative;
   margin-top: 400px;
   padding: 50px 20px;
-  background-color: var(--foliage);
+  background-color: var(--ground);
   z-index: 2;
 
   @media screen and (min-width: 480px) {
@@ -62,7 +83,7 @@
   @include media-breakpoint-up(md) {
     margin-top: 0;
     padding: unset;
-    padding-top: 270px;
+    padding-top: 330px;
     background-color: transparent;
   }
 
@@ -81,7 +102,7 @@
   animation: in 1200ms ease 1400ms forwards;
   
   @include media-breakpoint-up(md) {
-    max-width: 55%;
+    max-width: 46%;
   }
 }
 
@@ -120,7 +141,7 @@
 
 .contact {
   display: flex;
-  background-color: var(--foliage);
+  background-color: var(--ground);
   padding: 0 20px 30px 20px;
 
   @media screen and (min-width: 480px) {
@@ -194,6 +215,9 @@
   .outline {
     fill: var(--outline);
   }
+  .fgOutline {
+    fill: var(--fg-outline);
+  }
   .bark {
     fill: var(--bark);
   }
@@ -206,7 +230,38 @@
   .bgFoliage {
     fill: var(--bg-foliage);
   }
+  .shirt {
+    fill: var(--shirt);
+  }
+  .skin {
+    fill: var(--skin);
+  }
+  .hair {
+    fill: var(--hair);
+  }
+  .ground {
+    fill: var(--ground);
+  }
+  .foliage {
+    fill: var(--foliage);
+  }
+  .desert-1 {
+    fill: var(--desert-1);
+  }
+  .desert-2 {
+    fill: var(--desert-2);
+  }
+  .desert-3 {
+    fill: var(--desert-3);
+  }
+  .desert-4 {
+    fill: var(--desert-4);
+  }
+  .desert-5 {
+    fill: var(--desert-5);
+  }
   .leaf {
+    fill: var(--leaves);
     :local {
       animation-name: wind;
     }
@@ -224,17 +279,13 @@
     }
   }
 
-  .ground, .leaf, .foliage {
-    fill: var(--foliage);
-  }
-
   .left-leaves:local {
     fill: var(--foliage);
     animation: subtle-wind 5s 3s ease infinite alternate;
   }
 
   .right-leaves:local {
-    fill: var(--foliage);
+    fill: var(--foliage-alt);
     animation: subtle-wind 5s ease infinite alternate;
   }
 }

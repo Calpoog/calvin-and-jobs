@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import { ReactComponent as Desert } from '../../../assets/desert.svg';
 import { ReactComponent as MyWork } from '../../../assets/my-work.svg';
 import { ReactComponent as Quote1 } from '../../../assets/quote1.svg';
 import { ReactComponent as Quote2 } from '../../../assets/quote2.svg';
@@ -25,6 +24,7 @@ import Slider from 'react-slick';
 import '../../../assets/slick.css';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
+import Innovator from '../components/Innovator/Innovator';
 
 function Home() {
   const sliderConfig = {
@@ -49,11 +49,8 @@ function Home() {
           <About />
         </section>
 
-        <section className={classNames(styles.desert, styles.divider, 'pt-8')}>
-          <h2 className={classNames(styles.invert, 'px-4')}>
-            A creative innovator at heart
-          </h2>
-          <Desert />
+        <section className={styles.divider}>
+          <Innovator />
         </section>
 
         <section className={styles.work}>
@@ -136,6 +133,7 @@ function Home() {
             <h2
               className={classNames(
                 styles.work,
+                'text-center',
                 'contain',
                 'px-4 px-md-6 px-lg-7 px-xl-8',
                 'pt-8',
