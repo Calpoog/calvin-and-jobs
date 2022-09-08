@@ -1,23 +1,28 @@
-.subtitle {
-  color: #004BBB;
+.me {
+  width: 100%;
+  max-width: 550px;
 }
 
-.title, .subtitle, .description, .preview {
-  opacity: 0;
+.about {
+  .me, h2, p {
+    opacity: 0;
+  }
 }
 
 .in {
-  .title, .subtitle, .description, .preview {
+  .me, h2, p {
     animation: in 400ms ease-out forwards;
   }
-  .title {
+  h2 {
     animation-delay: 300ms;
   }
-  .subtitle {
-    animation-delay: 500ms;
-  }
-  .description {
-    animation-delay: 700ms;
+
+  @for $i from 0 through 3 {
+    $start: $i * 200ms + 600ms;
+
+    p:nth-child(#{$i + 2}) {
+      animation-delay: $start;
+    }
   }
 }
 

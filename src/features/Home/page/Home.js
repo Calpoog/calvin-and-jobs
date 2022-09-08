@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import { ReactComponent as Desert } from '../../../assets/desert.svg';
-import { ReactComponent as AboutMe } from '../../../assets/about-me.svg';
 import { ReactComponent as MyWork } from '../../../assets/my-work.svg';
 import { ReactComponent as Quote1 } from '../../../assets/quote1.svg';
 import { ReactComponent as Quote2 } from '../../../assets/quote2.svg';
@@ -24,8 +23,8 @@ import kirby from '../../../assets/kirby.png';
 import WorkExample from '../components/WorkExample/WorkExample';
 import Slider from 'react-slick';
 import '../../../assets/slick.css';
-import { Link } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
+import About from '../components/About/About';
 
 function Home() {
   const sliderConfig = {
@@ -42,52 +41,12 @@ function Home() {
   return (
     <>
       <div className={styles.home}>
-        <section className={classNames(styles.divider)}>
+        <section className={styles.divider}>
           <Hero />
         </section>
 
-        <section className={classNames(styles.about, styles.divider)}>
-          <div
-            className={classNames(
-              styles.contain,
-              'px-4 px-md-6 px-lg-7 px-xl-8',
-              'py-6 py-md-8 py-lg-10'
-            )}
-          >
-            <div className='row gx-5 gx-lg-7 gx-xl-8 align-items-center'>
-              <div className='col-12 col-lg-6 mb-5 mb-lg-0'>
-                <AboutMe className={styles.me} />
-              </div>
-              <div className='col-12 col-lg-6 flex justify-content-center'>
-                <div className={styles.readingWidth}>
-                  <h2 className='mb-5'>About me</h2>
-                  <p>
-                    I’m Calvin–named after the greatest comic strip of all time,
-                    Calvin & Hobbes. I like to believe that it’s not just
-                    coincidence that I turned out inquisitive, skeptical, and
-                    imaginative. Oh, and I also build some pretty great snow
-                    sculptures.
-                  </p>
-                  <p>
-                    I like to learn and do as much as I can. I spend most of my
-                    free time creating in both the digital and physical spaces.
-                    I’ve designed and built websites, apps, games, tools, chat
-                    bots, doors, furniture, and entire closets.
-                  </p>
-                  <p>
-                    In my work I believe that UX and technology are inextricably
-                    linked. Curating a culture where professionals of each
-                    discipline are heard and work cohesively is imperative to
-                    delivering excellent experiences quickly and with quality.
-                  </p>
-                  <p>
-                    Check out my full experience and education on my{' '}
-                    <Link to='/resume'>resume</Link>.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section className={styles.divider}>
+          <About />
         </section>
 
         <section className={classNames(styles.desert, styles.divider, 'pt-8')}>
@@ -118,7 +77,7 @@ function Home() {
           <div
             className={classNames(
               styles.work,
-              styles.contain,
+              'contain',
               'px-4 px-md-6 px-lg-7 px-xl-8',
               'pt-5 pb-7 pb-md-10'
             )}
@@ -177,7 +136,7 @@ function Home() {
             <h2
               className={classNames(
                 styles.work,
-                styles.contain,
+                'contain',
                 'px-4 px-md-6 px-lg-7 px-xl-8',
                 'pt-8',
                 'mb-8'
@@ -227,7 +186,7 @@ function Home() {
         <section className={classNames(styles.care)}>
           <div
             className={classNames(
-              styles.contain,
+              'contain',
               'px-4 px-md-6 px-lg-7 px-xl-8',
               'py-8 py-lg-10'
             )}
