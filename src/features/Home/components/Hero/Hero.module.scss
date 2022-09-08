@@ -2,7 +2,15 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins/_breakpoints';
 
-$leaf-green: #7CDE6B;
+:root {
+  --foliage: #7CDE6B;
+  --bg-foliage: #e2ffdc;
+  --outline: #000000;
+  --widget: #c4ae78;
+  --bark: #9c8b45;
+  --bark-shadow: #4f3b26;
+  --shirt: #ff001f;
+}
 
 .hero {
   overflow: hidden;
@@ -43,7 +51,7 @@ $leaf-green: #7CDE6B;
   position: relative;
   margin-top: 400px;
   padding: 50px 20px;
-  background-color: $leaf-green;
+  background-color: var(--foliage);
   z-index: 2;
 
   @media screen and (min-width: 480px) {
@@ -112,7 +120,7 @@ $leaf-green: #7CDE6B;
 
 .contact {
   display: flex;
-  background-color: $leaf-green;
+  background-color: var(--foliage);
   padding: 0 20px 30px 20px;
 
   @media screen and (min-width: 480px) {
@@ -183,6 +191,21 @@ $leaf-green: #7CDE6B;
 
 
 :global {
+  .outline {
+    fill: var(--outline);
+  }
+  .bark {
+    fill: var(--bark);
+  }
+  .barkShadow {
+    fill: var(--bark-shadow);
+  }
+  .widget {
+    fill: var(--widget);
+  }
+  .bgFoliage {
+    fill: var(--bg-foliage);
+  }
   .leaf {
     :local {
       animation-name: wind;
@@ -191,7 +214,6 @@ $leaf-green: #7CDE6B;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    fill: $leaf-green;
 
     @for $i from 1 through 34 {
       $start: ($i - 1) * 200ms;
@@ -202,17 +224,17 @@ $leaf-green: #7CDE6B;
     }
   }
 
-  .ground {
-    fill: $leaf-green;
+  .ground, .leaf, .foliage {
+    fill: var(--foliage);
   }
 
   .left-leaves:local {
-    fill: $leaf-green;
+    fill: var(--foliage);
     animation: subtle-wind 5s 3s ease infinite alternate;
   }
 
   .right-leaves:local {
-    fill: $leaf-green;
+    fill: var(--foliage);
     animation: subtle-wind 5s ease infinite alternate;
   }
 }
