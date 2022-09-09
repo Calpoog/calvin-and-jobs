@@ -203,11 +203,8 @@ function Home() {
             </p>
             <div className={styles.things}>
               <div className={styles.thing}>
-                <img
-                  src={plants}
-                  alt='Multiple plants on a mid-century credenza'
-                />
-                <p>Taking care of my plants</p>
+                <img src={house} alt='A tudor inspired Columbus home' />
+                <p>Constantly improving</p>
               </div>
               <div className={classNames(styles.thing, styles.small)}>
                 <img
@@ -217,8 +214,11 @@ function Home() {
                 <p>My dog, Widget</p>
               </div>
               <div className={styles.thing}>
-                <img src={house} alt='A tudor inspired Columbus home' />
-                <p>Constantly improving</p>
+                <img
+                  src={kirby}
+                  alt='A 3D printer midway through constructing an orange Kirby figure'
+                />
+                <p>Creating</p>
               </div>
             </div>
             <div className={styles.things}>
@@ -238,10 +238,10 @@ function Home() {
               </div>
               <div className={styles.thing}>
                 <img
-                  src={kirby}
-                  alt='A 3D printer midway through constructing an orange Kirby figure'
+                  src={plants}
+                  alt='Multiple plants on a mid-century credenza'
                 />
-                <p>Creating</p>
+                <p>Taking care of my plants</p>
               </div>
             </div>
           </div>
