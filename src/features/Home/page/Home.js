@@ -53,7 +53,7 @@ function Home() {
           <Innovator />
         </section>
 
-        <section className={styles.work}>
+        <section className={classNames(styles.work, styles.divider)}>
           <div
             className={classNames(
               styles.workHeader,
@@ -128,7 +128,7 @@ function Home() {
           </div>
         </section>
 
-        <section className={styles.describe}>
+        <section className={classNames(styles.describe, styles.divider)}>
           <div className={classNames(styles.work, 'pt-8')}>
             <h2
               className={classNames(
