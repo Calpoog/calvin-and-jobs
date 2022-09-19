@@ -45,7 +45,7 @@ function TimelinePane() {
           end='Present'
         >
           <p>
-            As the UX and technology lead, I support innovation pods on product
+            As the UX and engineering lead, I support innovation pods on product
             design and in-market testing. I work with third parties, create
             designs, architect backends, and implement challenging solutions. I
             coach and upskill a team of 6+ developers. I also provide
