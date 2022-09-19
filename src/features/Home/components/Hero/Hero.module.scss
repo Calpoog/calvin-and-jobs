@@ -52,7 +52,7 @@
     line-height: 1;
     font-weight: bold;
     animation: in 1200ms ease 300ms forwards;
-    
+
     // @include media-breakpoint-up(md) {
     //   -webkit-text-stroke: 20px white;
 
@@ -79,7 +79,7 @@
     margin-top: 600px;
     padding: 50px;
   }
-  
+
   @include media-breakpoint-up(md) {
     margin-top: 0;
     padding: unset;
@@ -95,12 +95,11 @@
   }
 }
 
-
 .intro {
   max-width: none;
   opacity: 0;
   animation: in 1200ms ease 1400ms forwards;
-  
+
   @include media-breakpoint-up(md) {
     max-width: 46%;
   }
@@ -135,7 +134,7 @@
     position: absolute;
     left: 100%;
     top: 0;
-    background-color: #e2ffdc;
+    background-color: var(--bg-foliage);
   }
 }
 
@@ -147,7 +146,7 @@
   @media screen and (min-width: 480px) {
     padding: 0 50px 30px 50px;
   }
-  
+
   @include media-breakpoint-up(md) {
     background-color: transparent;
     position: absolute;
@@ -185,7 +184,8 @@
       transition: 150ms ease;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       &:before {
         width: 100%;
       }
@@ -204,12 +204,12 @@
   color: black !important;
   transition: 150ms ease;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: white;
     border-color: black;
   }
 }
-
 
 :global {
   .outline {
@@ -272,7 +272,7 @@
 
     @for $i from 1 through 34 {
       $start: ($i - 1) * 200ms;
-  
+
       &.leaf-#{$i} {
         animation-delay: $start;
       }
@@ -291,7 +291,7 @@
 }
 
 @keyframes in {
-  0%   {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
