@@ -39,7 +39,7 @@ function TimelinePane() {
 
       <div className='jobs'>
         <Job
-          title='UX Design Lead, Creative Technology'
+          title='UX & Engineering Lead'
           company='Nationwide'
           start='Apr 2015'
           end='Present'
