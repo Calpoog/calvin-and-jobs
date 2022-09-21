@@ -27,7 +27,7 @@ function Resume() {
           </div>
           <div className='col-12 col-lg order-first order-lg-last pb-5'>
             <TimelinePane />
-            <div className='row justify-content-center gy-3 gy-lg-0'>
+            <div className='row justify-content-center gy-3 gy-lg-0 d-print-none'>
               <div className='col-auto'>
                 <Button
                   url='https://github.com/Calpoog/calvin-and-jobs'

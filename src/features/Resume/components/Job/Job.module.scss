@@ -8,6 +8,7 @@ $top: calc($h3-font-size * $headings-line-height / 2 - 0.5rem);
 
 .job {
   position: relative;
+  break-inside: avoid;
 
   &:after {
     content: '';

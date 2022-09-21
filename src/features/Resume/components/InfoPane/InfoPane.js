@@ -16,7 +16,7 @@ function InfoPane() {
     <section
       className={`${styles.infoPane} h-100 pb-5 ps-3 pe-4 pt-6 ps-lg-4 pe-lg-6 d-flex flex-column`}
     >
-      <div className={styles.spills}>
+      <div className={classNames(styles.spills, 'd-print-none')}>
         <SpillTop className={styles.spillTop} />
         <SpillBottom className={styles.spillBottom} />
       </div>
@@ -32,24 +32,26 @@ function InfoPane() {
                 (•••) ••• - ••••
               </p>
             </address>
-            <a
-              className={classNames(styles.iconLink, 'me-2')}
-              href='https://www.linkedin.com/in/calvin-goodman-25752067/'
-            >
-              <SiLinkedin />
-            </a>
-            <a
-              className={classNames(styles.iconLink, 'me-2')}
-              href='https://github.com/Calpoog'
-            >
-              <SiGithub />
-            </a>
-            <a
-              className={styles.iconLink}
-              href='https://thenounproject.com/calpoog/'
-            >
-              <SiNounproject />
-            </a>
+            <div className='d-print-none'>
+              <a
+                className={classNames(styles.iconLink, 'me-2')}
+                href='https://www.linkedin.com/in/calvin-goodman-25752067/'
+              >
+                <SiLinkedin />
+              </a>
+              <a
+                className={classNames(styles.iconLink, 'me-2')}
+                href='https://github.com/Calpoog'
+              >
+                <SiGithub />
+              </a>
+              <a
+                className={styles.iconLink}
+                href='https://thenounproject.com/calpoog/'
+              >
+                <SiNounproject />
+              </a>
+            </div>
           </InfoBlock>
         </div>
         <div className='col-12 col-sm-6 col-lg-12'>
@@ -94,7 +96,7 @@ function InfoPane() {
         </div>
       </div>
 
-      <ThemeSwitcher className='mt-4 mt-lg-auto' />
+      <ThemeSwitcher className='mt-4 mt-lg-auto d-print-none' />
     </section>
   );
 }

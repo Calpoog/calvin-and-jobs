@@ -5,6 +5,7 @@
 }
 
 .infoBlock {
+  break-inside: avoid;
   animation-name: slide-in;
   animation-fill-mode: both;
   animation-duration: 500ms;
