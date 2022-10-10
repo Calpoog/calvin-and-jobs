@@ -97,7 +97,7 @@ function Home() {
             <WorkExample
               img={lasso}
               title='Project Lasso'
-              subtitle='Nationwide, UX Design Lead, 2021'
+              subtitle='Nationwide, Engineering & UX Lead, 2021'
             >
               When a member reaches a critical life-gate (nearing retirement,
               retirement, or switching jobs), they must make an important
