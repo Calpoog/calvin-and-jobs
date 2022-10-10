@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc0f40d8.css",
+    "main.js": "/static/js/main.2d53f469.js",
+    "static/js/787.89f249e0.chunk.js": "/static/js/787.89f249e0.chunk.js",
+    "static/media/house.png": "/static/media/house.8a9d9900bc70ec0d1c1b.png",
+    "static/media/about-me.svg": "/static/media/about-me.29332b0cfb87692a62dca263cba262f4.svg",
+    "static/media/plants.png": "/static/media/plants.5c1edf3c62e50911d54e.png",
+    "static/media/kirby.png": "/static/media/kirby.7a6d79d03ae9c07577d0.png",
+    "static/media/beans.png": "/static/media/beans.ad568366f76f9f3f96cf.png",
+    "static/media/widget.png": "/static/media/widget.70215e8bec282aab8d3b.png",
+    "static/media/closet.png": "/static/media/closet.c3201a7122b011acb62c.png",
+    "static/media/desert.svg": "/static/media/desert.34941526f1482cb97c50c85cbbf2247a.svg",
+    "static/media/big-tree.svg": "/static/media/big-tree.9e312e3152dbd107defdcb4ea2edb7f1.svg",
+    "static/media/sudoku.png": "/static/media/sudoku.09a60ef490fd5a07aa6b.png",
+    "static/media/homespring.png": "/static/media/homespring.a108c12dcacbd5c9e04e.png",
+    "static/media/illustration.svg": "/static/media/illustration.cbe82ff42f71d7b8fc9e4e273400dedd.svg",
+    "static/media/describe-me-calvin.svg": "/static/media/describe-me-calvin.9ceef4262c9e8a7029dcf8d98071463e.svg",
+    "static/media/lasso.png": "/static/media/lasso.3656f89ab10e6b5e07e2.png",
+    "static/media/my-work.svg": "/static/media/my-work.798d72ee560defa014cffb3c410fe18b.svg",
+    "static/media/describe-me.svg": "/static/media/describe-me.48cff2738261c92f67349c74105aa595.svg",
+    "static/media/quote3.svg": "/static/media/quote3.c5d7068bca00b8485981493cf0531dd4.svg",
+    "static/media/quote1.svg": "/static/media/quote1.869cb2c82cb84d846b7daebff17aae22.svg",
+    "static/media/quote2.svg": "/static/media/quote2.11329ef157dac25df99511230d6c3aa4.svg",
+    "static/media/Lightbulb.svg": "/static/media/Lightbulb.938e6162b9cb1371caa4086f641a5a7d.svg",
+    "static/media/Thumbs Up.svg": "/static/media/Thumbs Up.06ab8d00b74ecbbb0e31211bb4b9f026.svg",
+    "index.html": "/index.html",
+    "static/media/left-arrow.svg": "/static/media/left-arrow.14e4a3f811baa5f05576707875f8b1c2.svg",
+    "static/media/right-arrow.svg": "/static/media/right-arrow.7a0c17cad113b7c6c842149539bc6740.svg",
+    "static/media/spill-bottom.svg": "/static/media/spill-bottom.2b706b5c7f1c9348845939a577ebfb2a.svg",
+    "static/media/spill-top.svg": "/static/media/spill-top.a384892fe6e2b4ce2d49953dc2927e7b.svg",
+    "static/media/Book.svg": "/static/media/Book.85b010150ec47b684a29913911a83c66.svg",
+    "static/media/Location.svg": "/static/media/Location.84179cfcbb21ad16dcd4a9861a1fc8d3.svg",
+    "main.fc0f40d8.css.map": "/static/css/main.fc0f40d8.css.map",
+    "main.2d53f469.js.map": "/static/js/main.2d53f469.js.map",
+    "787.89f249e0.chunk.js.map": "/static/js/787.89f249e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc0f40d8.css",
+    "static/js/main.2d53f469.js"
+  ]
+}
